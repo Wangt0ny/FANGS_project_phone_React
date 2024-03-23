@@ -14,7 +14,7 @@ function ProductList() {
     let vegetableType = productDataList.filter((x) => { return x.type === "vegetable" });
     let dumplingsType = productDataList.filter((x) => { return x.type === "dumplings" });
 
-    let [shopcart, setShopcart] = useState([{ id: "hotPot01", item: 1 }]); // 購物車
+    let [shopcart, setShopcart] = useState([{ id: "hotPot01", item: 1 }, { id: "hotPot02", item: 1 }]); // 購物車
     let [openCart, setOpenCart] = useState(false); // 開啟購物車
     let [btnState, setBtnState] = useState(false); // false 開啟購物車 / true 送出訂單 
 
