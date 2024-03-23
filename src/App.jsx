@@ -5,7 +5,7 @@ import ProductList from "./components/ProductList"
 
 function App() {
   return (
-    <div className="page-wrapper">
+    <div className="page-wrapper" id="page-wrapper">
       <Header />
       <AnchorList />
       <ProductList />
