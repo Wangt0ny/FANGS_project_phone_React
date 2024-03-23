@@ -1,7 +1,8 @@
-let projectDataList = [
+import product01 from './product/product01.webp'
+let productDataList = [
     {
         id: "hotPot01",
-        img: "../image/product/product01.webp",
+        img: product01,
         price: 159,
         product: "蔬菜鍋物",
         type: "hotPot",
@@ -9,7 +10,7 @@ let projectDataList = [
     ,
     {
         id: "hotPot02",
-        img: "../image/product/product01.webp",
+        img: product01,
         price: 200,
         product: "海鮮鍋物",
         type: "hotPot",
@@ -17,15 +18,15 @@ let projectDataList = [
     ,
     {
         id: "hotPot03",
-        img: "../image/product/product01.webp",
+        img: product01,
         price: 300,
         product: "鮮肉鍋物",
         type: "hotPot",
     }
     ,
-    {   
+    {
         id: "product01",
-        img: "../image/product/product01.webp",
+        img: product01,
         price: 1559,
         product: "梅花豬肉",
         type: "meat",
@@ -33,7 +34,7 @@ let projectDataList = [
     ,
     {
         id: "product02",
-        img: "../image/product/product02.webp",
+        img: product01,
         price: 2699,
         product: "五花肉",
         type: "meat",
@@ -41,7 +42,7 @@ let projectDataList = [
     ,
     {
         id: "product03",
-        img: "../image/product/product03.webp",
+        img: product01,
         price: 2549,
         product: "梅花牛肉",
         type: "meat",
@@ -49,7 +50,7 @@ let projectDataList = [
     ,
     {
         id: "product04",
-        img: "../image/product/product04.webp",
+        img: product01,
         price: 4999,
         product: "五花牛",
         type: "meat",
@@ -57,7 +58,7 @@ let projectDataList = [
     ,
     {
         id: "product05",
-        img: "../image/product/product05.webp",
+        img: product01,
         price: 1119,
         product: "澳洲和牛",
         type: "meat",
@@ -65,7 +66,7 @@ let projectDataList = [
     ,
     {
         id: "product06",
-        img: "../image/product/product06.webp",
+        img: product01,
         price: 3699,
         product: "蝦",
         type: "seafood",
@@ -73,7 +74,7 @@ let projectDataList = [
     ,
     {
         id: "product07",
-        img: "../image/product/product07.webp",
+        img: product01,
         price: 2939,
         product: "蛤蜊",
         type: "seafood",
@@ -81,7 +82,7 @@ let projectDataList = [
     ,
     {
         id: "product08",
-        img: "../image/product/product08.webp",
+        img: product01,
         price: 1849,
         product: "石班魚肉",
         type: "seafood",
@@ -89,7 +90,7 @@ let projectDataList = [
     ,
     {
         id: "product09",
-        img: "../image/product/product09.webp",
+        img: product01,
         price: 1519,
         product: "鱸魚肉",
         type: "seafood",
@@ -97,7 +98,7 @@ let projectDataList = [
     ,
     {
         id: "product10",
-        img: "../image/product/product10.webp",
+        img: product01,
         price: 2199,
         product: "小捲",
         type: "seafood",
@@ -105,7 +106,7 @@ let projectDataList = [
     ,
     {
         id: "product11",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 1614,
         product: "牡蠣",
         type: "seafood",
@@ -113,7 +114,7 @@ let projectDataList = [
     ,
     {
         id: "product12",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 997,
         product: "蟹腳肉",
         type: "seafood",
@@ -121,7 +122,7 @@ let projectDataList = [
     ,
     {
         id: "product13",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 1999,
         product: "干貝",
         type: "seafood",
@@ -129,7 +130,7 @@ let projectDataList = [
     ,
     {
         id: "product14",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "芋泥包",
         type: "dumplings",
@@ -137,7 +138,7 @@ let projectDataList = [
     ,
     {
         id: "product15",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "蟹肉丸",
         type: "dumplings",
@@ -145,7 +146,7 @@ let projectDataList = [
     ,
     {
         id: "product16",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "三角豆腐",
         type: "vegetable",
@@ -153,7 +154,7 @@ let projectDataList = [
     ,
     {
         id: "product17",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "干貝丸",
         type: "dumplings",
@@ -161,7 +162,7 @@ let projectDataList = [
     ,
     {
         id: "product18",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "蔬菜片",
         type: "vegetable",
@@ -169,7 +170,7 @@ let projectDataList = [
     ,
     {
         id: "product19",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "三角蔬菜豆腐",
         type: "vegetable",
@@ -177,7 +178,7 @@ let projectDataList = [
     ,
     {
         id: "product20",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "大甲芋頭",
         type: "vegetable",
@@ -185,7 +186,7 @@ let projectDataList = [
     ,
     {
         id: "product21",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "牛肉丸",
         type: "dumplings",
@@ -193,7 +194,7 @@ let projectDataList = [
     ,
     {
         id: "product22",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "鴨肉丸（大顆）",
         type: "dumplings",
@@ -201,7 +202,7 @@ let projectDataList = [
     ,
     {
         id: "product23",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "芋角貢丸",
         type: "dumplings",
@@ -209,7 +210,7 @@ let projectDataList = [
     ,
     {
         id: "product24",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "蔬菜豆腐（正方形）",
         type: "vegetable",
@@ -217,7 +218,7 @@ let projectDataList = [
     ,
     {
         id: "product25",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "蛋餃",
         type: "dumplings",
@@ -225,7 +226,7 @@ let projectDataList = [
     ,
     {
         id: "product26",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "花枝腸",
         type: "dumplings",
@@ -233,7 +234,7 @@ let projectDataList = [
     ,
     {
         id: "product27",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "日本蝦球",
         type: "dumplings",
@@ -241,7 +242,7 @@ let projectDataList = [
     ,
     {
         id: "product28",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "魚蛋腸",
         type: "dumplings",
@@ -249,7 +250,7 @@ let projectDataList = [
     ,
     {
         id: "product29",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "北海章魚",
         type: "seafood",
@@ -257,7 +258,7 @@ let projectDataList = [
     ,
     {
         id: "product30",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "魚卵蝦球",
         type: "dumplings",
@@ -265,7 +266,7 @@ let projectDataList = [
     ,
     {
         id: "product31",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "帝王蟹棒",
         type: "dumplings",
@@ -273,7 +274,7 @@ let projectDataList = [
     ,
     {
         id: "product32",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "炙燒（起司）",
         type: "dumplings",
@@ -281,7 +282,7 @@ let projectDataList = [
     ,
     {
         id: "product33",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "月亮蝦餅",
         type: "dumplings",
@@ -289,7 +290,7 @@ let projectDataList = [
     ,
     {
         id: "product34",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "明太子（爆漿魚卵）",
         type: "dumplings",
@@ -297,7 +298,7 @@ let projectDataList = [
     ,
     {
         id: "product35",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "章魚條",
         type: "seafood",
@@ -305,7 +306,7 @@ let projectDataList = [
     ,
     {
         id: "product36",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "日本干貝",
         type: "seafood",
@@ -313,7 +314,7 @@ let projectDataList = [
     ,
     {
         id: "product37",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "南瓜包",
         type: "dumplings",
@@ -321,7 +322,7 @@ let projectDataList = [
     ,
     {
         id: "product38",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "芝心包（拉絲起司）",
         type: "dumplings",
@@ -329,9 +330,11 @@ let projectDataList = [
     ,
     {
         id: "product39",
-        img: "../image/product/product11.webp",
+        img: product01,
         price: 3609,
         product: "切花枝揚",
         type: "dumplings",
     }
 ];
+
+export default productDataList
