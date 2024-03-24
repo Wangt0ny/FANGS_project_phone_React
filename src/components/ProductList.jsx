@@ -4,7 +4,7 @@ import Shopcart from "./Shopcart";
 import ShopcartButton from "./ShopcartButton";
 import productDataList from '../assets/data';
 import './css/productList.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ProductList() {
 
@@ -14,9 +14,10 @@ function ProductList() {
     let vegetableType = productDataList.filter((x) => { return x.type === "vegetable" });
     let dumplingsType = productDataList.filter((x) => { return x.type === "dumplings" });
 
-    let [shopcart, setShopcart] = useState([{ id: "hotPot01", item: 1 }, { id: "hotPot02", item: 1 }]); // 購物車
+    let [shopcart, setShopcart] = useState([]); // 購物車{ id: "hotPot01", item: 1 }, { id: "hotPot02", item: 1 }
     let [openCart, setOpenCart] = useState(false); // 開啟購物車
     let [btnState, setBtnState] = useState(false); // false 開啟購物車 / true 送出訂單 
+    // useEffect(() => console.log(shopcart), [shopcart])
 
     // 生成菜單
     function generateMenuCard(list) {
@@ -55,7 +56,7 @@ function ProductList() {
                 </div>
 
             </div>
-            <Shopcart data={shopcart} editShopcart={setShopcart} />
+            <Shopcart data={productDataList} shopcart={shopcart} editShopcart={setShopcart} />
             <ShopcartButton />
             <SentButton />
         </>
