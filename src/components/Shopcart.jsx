@@ -3,6 +3,8 @@ import './css/shopcart.css'
 
 function Shopcart(props) {
 
+    let openCart = props.openCart; // Boolean
+    let setOpenCart = props.setOpenCart; //fn
     let productDataList = props.data; //array
     let shopcart = props.shopcart; //array
     let setShopcart = props.editShopcart; //fn
@@ -14,7 +16,12 @@ function Shopcart(props) {
 
                 let search = productDataList.find((y) => y.id === id) || [];
 
-                return <ShopcartItem key={id} item={item} data={search} />
+                return <ShopcartItem key={id}
+                    item={item}
+                    data={search}
+                    id={id}
+                    setShopcart={setShopcart}
+                    shopcart={shopcart} />
 
             })
         } else {
@@ -22,9 +29,13 @@ function Shopcart(props) {
         }
     }
 
+    function closeShopcart() {
+        setOpenCart(false)
+    }
+
     return (
-        <div className="cart-page">
-            <i className="bi bi-x-lg"></i>
+        <div className={openCart ? "cart-page active" : "cart-page"}>
+            <i className="bi bi-x-lg" onClick={closeShopcart}></i>
             <div className="cart">購物車</div>
             <div className="shopping-cart">
                 {shopcartItem()}

@@ -22,7 +22,10 @@ function ProductList() {
     // 生成菜單
     function generateMenuCard(list) {
         return list.map(item => {
-            return <Product key={item.id} data={item} cartData={shopcart} editCart={setShopcart} />
+            return <Product key={item.id}
+                data={item}
+                cartData={shopcart}
+                editCart={setShopcart} />
         })
     }
 
@@ -56,7 +59,11 @@ function ProductList() {
                 </div>
 
             </div>
-            <Shopcart data={productDataList} shopcart={shopcart} editShopcart={setShopcart} />
+            <Shopcart data={productDataList}
+                shopcart={shopcart}
+                editShopcart={setShopcart}
+                openCart={openCart}
+                setOpenCart={setOpenCart} />
             <ShopcartButton />
             <SentButton />
         </>
