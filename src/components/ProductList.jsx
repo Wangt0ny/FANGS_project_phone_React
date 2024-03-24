@@ -4,7 +4,7 @@ import Shopcart from "./Shopcart";
 import ShopcartButton from "./ShopcartButton";
 import productDataList from '../assets/data';
 import './css/productList.css'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function ProductList() {
 
@@ -69,10 +69,13 @@ function ProductList() {
             <div className={(shopcart.length !== 0) ? "button-cotainer active" : "button-cotainer"}>
                 <ShopcartButton btnState={btnState}
                     setBtnState={setBtnState}
-                    setOpenCart={setOpenCart} />
+                    setOpenCart={setOpenCart}
+                    data={productDataList}
+                    shopcart={shopcart} />
 
                 <SentButton btnState={btnState}
-                    setShopcart={setShopcart} />
+                    setShopcart={setShopcart}
+                    shopcart={shopcart} />
             </div>
         </>
 

@@ -1,10 +1,16 @@
 import './css/header.css'
 import logo from '../assets/Logo.png'
+import { useEffect, useState } from 'react';
 
 function Header() {
 
-    function test() {
-        document.querySelector(".list li").style.color = "red"
+    let [tableNumber, setTableNumber] = useState(0)
+    useEffect(getTableNumber, [])
+
+    function getTableNumber() {
+        let urlParams = new URLSearchParams(location.search);
+        let tableNum = urlParams.get("table");
+        setTableNumber(tableNum)
     }
 
     return (
@@ -15,9 +21,9 @@ function Header() {
                 </a>
 
                 <div className="login">
-                    <span id="table-number">桌號 1</span>
+                    <span id="table-number">桌號 {tableNumber}</span>
                     <a className="login-btn">
-                        <i className="bi bi-receipt-cutoff" onClick={test}></i>
+                        <i className="bi bi-receipt-cutoff"></i>
                     </a>
                 </div>
             </nav>
