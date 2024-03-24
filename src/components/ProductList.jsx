@@ -81,7 +81,8 @@ function ProductList(props) {
                     shopcart={shopcart} />
             </div>
 
-            <OrderPage openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
+            <OrderPage openOrderPage={openOrderPage}
+                setOrderPage={setOrderPage} />
         </>
 
 

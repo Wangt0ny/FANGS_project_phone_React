@@ -10,9 +10,11 @@ function App() {
 
   return (
     <div className="page-wrapper" id="page-wrapper">
-      <Header openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
+      <Header openOrderPage={openOrderPage}
+        setOrderPage={setOrderPage} />
       <AnchorList />
-      <ProductList openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
+      <ProductList openOrderPage={openOrderPage} s
+        setOrderPage={setOrderPage} />
       <Footer />
     </div>
   )
