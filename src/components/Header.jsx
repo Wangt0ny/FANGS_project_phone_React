@@ -12,7 +12,7 @@ function Header(props) {
     function getTableNumber() {
         let urlParams = new URLSearchParams(location.search);
         let tableNum = urlParams.get("table");
-        setTableNumber(tableNum)
+        setTableNumber(tableNum || 0)
     }
 
     function open() {
