@@ -2,15 +2,21 @@ import './css/shopcartItem.css'
 
 function ShopcartItem(props) {
 
-    let search = props.data;
-    let item = props.item;
+    let search = props.data; //object
+    let item = props.item; //number
     let id = props.id;
-    let shopcart = props.shopcart;
-    let setShopcart = props.setShopcart;
+    let shopcart = props.shopcart; //array
+    let setShopcart = props.setShopcart; //fn
+    let setOpenCart = props.setOpenCart; //fn
+    let setBtnState = props.setBtnState; //fn
 
     function deleteItem(id) {
         shopcart = shopcart.filter((x) => x.id !== id);
         setShopcart(shopcart);
+        if (shopcart.length == 0) {
+            setOpenCart(false);
+            setBtnState(false);
+        };
     }
 
     return (

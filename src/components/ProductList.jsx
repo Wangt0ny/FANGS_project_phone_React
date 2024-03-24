@@ -63,14 +63,16 @@ function ProductList() {
                 shopcart={shopcart}
                 editShopcart={setShopcart}
                 openCart={openCart}
-                setOpenCart={setOpenCart} />
+                setOpenCart={setOpenCart}
+                setBtnState={setBtnState} />
 
             <div className={(shopcart.length !== 0) ? "button-cotainer active" : "button-cotainer"}>
                 <ShopcartButton btnState={btnState}
                     setBtnState={setBtnState}
                     setOpenCart={setOpenCart} />
 
-                <SentButton btnState={btnState} />
+                <SentButton btnState={btnState}
+                    setShopcart={setShopcart} />
             </div>
         </>
 

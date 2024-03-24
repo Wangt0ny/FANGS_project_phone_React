@@ -8,6 +8,7 @@ function Shopcart(props) {
     let productDataList = props.data; //array
     let shopcart = props.shopcart; //array
     let setShopcart = props.editShopcart; //fn
+    let setBtnState = props.setBtnState; //fn
 
     function shopcartItem() {
         if (shopcart.length !== 0) {
@@ -21,7 +22,9 @@ function Shopcart(props) {
                     data={search}
                     id={id}
                     setShopcart={setShopcart}
-                    shopcart={shopcart} />
+                    shopcart={shopcart}
+                    setOpenCart={setOpenCart}
+                    setBtnState={setBtnState} />
 
             })
         } else {
@@ -30,7 +33,8 @@ function Shopcart(props) {
     }
 
     function closeShopcart() {
-        setOpenCart(false)
+        setOpenCart(false);
+        setBtnState(false);
     }
 
     return (
