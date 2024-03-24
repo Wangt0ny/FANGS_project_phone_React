@@ -5,9 +5,13 @@ function SentButton(props) {
     let btnState = props.btnState; //Boolean
     let shopcart = props.shopcart;//array
     let setShopcart = props.setShopcart; //fn
+    let setOpenCart = props.setOpenCart; //fn
+    let setBtnState = props.setBtnState; //fn
 
     function sentShopcart() {
         setShopcart([]);
+        setOpenCart(false);
+        setBtnState(false);
     }
 
     function totalItem() {

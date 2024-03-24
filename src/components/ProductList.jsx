@@ -78,7 +78,9 @@ function ProductList(props) {
 
                 <SentButton btnState={btnState}
                     setShopcart={setShopcart}
-                    shopcart={shopcart} />
+                    shopcart={shopcart}
+                    setBtnState={setBtnState}
+                    setOpenCart={setOpenCart} />
             </div>
 
             <OrderPage openOrderPage={openOrderPage}
