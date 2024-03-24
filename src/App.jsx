@@ -1,14 +1,18 @@
+import { useState } from "react";
 import AnchorList from "./components/AnchorList"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import ProductList from "./components/ProductList"
 
 function App() {
+
+  let [openOrderPage, setOrderPage] = useState(false); // 開/關 訂單紀錄
+
   return (
     <div className="page-wrapper" id="page-wrapper">
-      <Header />
+      <Header openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
       <AnchorList />
-      <ProductList />
+      <ProductList openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
       <Footer />
     </div>
   )

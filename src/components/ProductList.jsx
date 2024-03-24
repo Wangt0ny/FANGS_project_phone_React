@@ -1,12 +1,13 @@
+import './css/productList.css'
+import { useState } from "react";
 import Product from "./Product";
 import SentButton from "./SentButton";
 import Shopcart from "./Shopcart";
 import ShopcartButton from "./ShopcartButton";
 import productDataList from '../assets/data';
-import './css/productList.css'
-import { useState } from "react";
+import OrderPage from './OrderPage';
 
-function ProductList() {
+function ProductList(props) {
 
     let hotPotType = productDataList.filter((x) => { return x.type === "hotPot" });
     let meatType = productDataList.filter((x) => { return x.type === "meat" });
@@ -14,8 +15,10 @@ function ProductList() {
     let vegetableType = productDataList.filter((x) => { return x.type === "vegetable" });
     let dumplingsType = productDataList.filter((x) => { return x.type === "dumplings" });
 
+    let openOrderPage = props.openOrderPage; //Boolean
+    let setOrderPage = props.setOrderPage; //fn
     let [shopcart, setShopcart] = useState([]); // 購物車{ id: "hotPot01", item: 1 }, { id: "hotPot02", item: 1 }
-    let [openCart, setOpenCart] = useState(false); // 開啟購物車
+    let [openCart, setOpenCart] = useState(false); // 開/關 購物車
     let [btnState, setBtnState] = useState(false); // false 開啟購物車 / true 送出訂單 
     // useEffect(() => console.log(shopcart), [shopcart])
 
@@ -77,6 +80,8 @@ function ProductList() {
                     setShopcart={setShopcart}
                     shopcart={shopcart} />
             </div>
+
+            <OrderPage openOrderPage={openOrderPage} setOrderPage={setOrderPage} />
         </>
 
 

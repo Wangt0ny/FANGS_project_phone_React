@@ -14,9 +14,14 @@
     transform: translateY(0%);
 }
 
+.bi-x-lg {
+    font-size: 1.25em;
+}
+
 .cart {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
+    font-weight: 600;
     margin-top: -20px;
     margin-bottom: 20px;
 }
