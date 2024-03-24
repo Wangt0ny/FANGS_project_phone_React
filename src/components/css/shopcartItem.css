@@ -34,6 +34,7 @@
 
 .bi-trash {
     font-size: 24px;
+    cursor: pointer;
 }
 
 .cart-item>.bi-trash:hover {
